@@ -1,18 +1,15 @@
+// map es inmutable con el mismo numero de elementos 
 const letters = ["a","b","c","d"];
+const newLetters=[];
 
-const newArray=[];
-
-// for (let index = 0; index < letters.length; index++) {
-//     const element = letters[index];
-//     newArray.push(" ++ "+element);
-
-// }
-
- const newArrayMap =letters.map(item => item +" **" );
- 
+for (let index = 0; index < letters.length; index++) {
+    const element = letters[index];
+    newLetters.push(" ++ "+element);
+}
+ const newLettersMap =letters.map(item => "*" +item+"*" );
 
 console.log("original       => " + letters);
-console.log("nuevo          => " + newArray);
-console.log("array con map  => "+newArrayMap);
+console.log("nuevo          => " + newLetters);
+console.log("array con map  => " + newLettersMap);
 
 

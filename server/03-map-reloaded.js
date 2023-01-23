@@ -22,7 +22,26 @@ const orders = [
 ];
 
 console.log(orders);
-console.log("original", orders);
+const ordersTotal= orders.map(item => item.total)
+console.log(ordersTotal);
+const ordersNames= orders.map(item => item.customerName)
+console.log(ordersNames);
+const ordersDelivered= orders.map(item => item.delivered)
+console.log(ordersDelivered);
+const orderTaxes = orders.map(item => item.total*0.19)
+console.log(orderTaxes);
+
+const ordersItemTaxes = orders.map(item => {
+    return {
+      ...item,
+      tax: 0.19*item.total
+
+    }
+})
+console.log(orders);
+console.log(ordersItemTaxes);
+
+// console.log("original", orders);
 // const newOrders= orders.map(item => item.total)
 // console.log("new Orders = "+ newOrders);
 
@@ -33,11 +52,11 @@ console.log("original", orders);
 
 // console.log(newOrders2);
 
-const newOrders3 = orders.map(item => {
-  item.tax = 0.19*item.total
-  return {
-    ...item,
-    tax:0.19
-  }
-})
-console.log(newOrders3);
+// const newOrders3 = orders.map(item => {
+//   item.tax = 0.19*item.total
+//   return {
+//     ...item,
+//     tax:0.19
+//   }
+// })
+// console.log(newOrders3);
