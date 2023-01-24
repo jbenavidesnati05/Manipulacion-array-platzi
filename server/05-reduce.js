@@ -1,18 +1,19 @@
-const totals = [1,2,3,4,5,6,7,8,9];
+const numbers = [1,2,3,4];
 
 let  acumSuma = 0
 
-for (let index = 0; index < totals.length; index++) {
-  const element = totals[index];
-
-  acumSuma += totals[index]; 
-  
+for (let index = 0; index < numbers.length; index++) {
+  acumSuma = acumSuma + numbers[index]; 
 }
+console.log("arreglo = ",numbers);
+console.log(acumSuma);
 
-console.log("total = ", acumSuma);
-console.log("arreglo = ",totals);
+let acumulado = 0
+const reduceNumbers = numbers.reduce((acumulado,item)=> acumulado +item)
+console.log(reduceNumbers);
 
-const totalsReduce = totals.reduce((acumSuma,element) => {
-  acumSuma + element , 0
-})
-console.log(totalsReduce);
+const numeros = [1,10,1];
+
+const sumaNum = numeros.reduce((suma,item)=>suma+item)
+console.log(sumaNum);
+
