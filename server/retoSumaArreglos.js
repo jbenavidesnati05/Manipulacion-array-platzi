@@ -6,3 +6,4 @@ for (let i = 0; i < arreglo1.length; i++) {
     arreglo3.push(element)
 }
 console.log(arreglo3);
+
