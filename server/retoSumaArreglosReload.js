@@ -44,6 +44,7 @@ for (let i = 0; i < finalA.length; i++) {
     const suma = finalA[i] + finalB[i];
     finalfinal.push(suma)
 }
+console.warn("solucion final")
 console.log(finalfinal);
 
 
